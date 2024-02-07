@@ -29,7 +29,7 @@ int main() {
         return 1; // Возврат кода ошибки
     }
 
-    double ringArea = Area(vneshniRadius, vnutriRadius);
+    double ringArea = calculateArea(vneshniRadius, vnutriRadius);
     std::cout << "Площадь кольца: " << ringArea << std::endl;
 
     return 0;
