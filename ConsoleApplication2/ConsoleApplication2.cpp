@@ -10,10 +10,10 @@ double Area(double radius) {
 
 // Функция для вычисления площади кольца
 double calculateArea(double vneshniRadius, double vnutriRadius) {
-    double vneshniRadius = Area(vneshniRadius);
-    double vnutriRadius = Area(vnutriRadius);
+    double vneshniArea = Area(vneshniRadius);
+    double vnutriArea = Area(vnutriRadius);
 
-    return vneshniRadius - vnutriRadius;
+    return vneshniArea - vnutriArea;
 }
 
 int main() {
@@ -23,8 +23,6 @@ int main() {
     std::cin >> vneshniRadius;
     std::cout << "Введите внутренний радиус кольца: ";
     std::cin >> vnutriRadius;
-
-    
 
     double ringArea = calculateArea(vneshniRadius, vnutriRadius);
     std::cout << "Площадь кольца: " << ringArea << std::endl;
