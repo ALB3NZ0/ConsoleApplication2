@@ -24,10 +24,7 @@ int main() {
     std::cout << "Введите внутренний радиус кольца: ";
     std::cin >> vnutriRadius;
 
-    if (vneshniRadius <= vnutriRadius) {
-        std::cerr << "Ошибка: Внешний радиус должен быть больше внутреннего." << std::endl;
-        return 1; // Возврат кода ошибки
-    }
+    
 
     double ringArea = calculateArea(vneshniRadius, vnutriRadius);
     std::cout << "Площадь кольца: " << ringArea << std::endl;
