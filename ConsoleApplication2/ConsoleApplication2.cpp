@@ -9,7 +9,7 @@ double Area(double radius) {
 }
 
 // Функция для вычисления площади кольца
-double calculateRingArea(double outerRadius, double innerRadius) {
+double calculateArea(double outerRadius, double innerRadius) {
     double vneshniRadius = Area(vneshniRadius);
     double vnutriRadius = Area(vnutriRadius);
 
