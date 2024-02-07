@@ -9,11 +9,11 @@ double Area(double radius) {
 }
 
 // Функция для вычисления площади кольца
-double calculateArea(double outerRadius, double innerRadius) {
+double calculateArea(double vneshniRadius, double vnutriRadius) {
     double vneshniRadius = Area(vneshniRadius);
     double vnutriRadius = Area(vnutriRadius);
 
-    return outerCircleArea - innerCircleArea;
+    return vneshniRadius - vnutriRadius;
 }
 
 int main() {
